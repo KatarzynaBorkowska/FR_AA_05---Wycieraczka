@@ -1,14 +1,19 @@
-//
-//  main.cpp
-//  FR_AA_05 - Wycieraczka
-//
-//  Created by Kasia on 03/06/2021.
-//
-
 #include <iostream>
+#include <cmath>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(){
+    
+    int w = 0,a,r,x,y,n;
+    cin >> a >> r >> n;
+    
+    for(int i = 0;i < n;i++)
+    {
+        cin >> x >> y;
+        if(sqrt(pow(a - x,2) + pow(y,2)) > r)
+            w++;
+    }
+    cout << w;
+    
     return 0;
 }
